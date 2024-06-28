@@ -1,0 +1,5 @@
+---
+- hosts: servers
+  tasks:
+    - name: Run Docker container
+      shell: docker run -itd --name testcon1 -p 8080:8080 jampalabharath/sdlc
